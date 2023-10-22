@@ -229,7 +229,7 @@ ul.social-icons li {
 }
 .navbar-nav {
     float: left;
-    margin:0 0 0 10em;
+    margin:0 0 0 8em;
 }
 .navbar-default .navbar-brand,.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #212121;
@@ -259,9 +259,10 @@ ul.social-icons li {
     color:#F58703;
 }
 .navbar-nav > li > a {
-    font-size: 22px;
+    font-size: 25px;
+	font-weight: 520;
     /* text-transform: uppercase; */
-    padding: 28px 15px 30px;
+    padding: 28px 10px 30px;
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
