@@ -259,8 +259,8 @@ ul.social-icons li {
     color:#F58703;
 }
 .navbar-nav > li > a {
-    font-size: 25px;
-	font-weight: 520;
+    font-size: 24px;
+	/* font-weight: bold; */
     /* text-transform: uppercase; */
     padding: 28px 10px 30px;
 	margin-top: 8px;
@@ -1032,7 +1032,7 @@ p.your:after {
 .wthree_service_breadcrumb_left ul li{
 	display:inline-block;
 	color:#212121;
-	font-size:22px;
+	font-size:23px;
 }
 .wthree_service_breadcrumb_left ul li i{
 	padding:.3em 1.5em;
@@ -3086,7 +3086,7 @@ a.pa_italic:focus {
 .alumni span{
 	font-family: 'Times New Roman', Times, serif;
 	font-weight: 450;
-	font-size: 1.25em;
+	font-size: 1.15em;
 	margin-left: 0em;
 	color:#696666;
 }
