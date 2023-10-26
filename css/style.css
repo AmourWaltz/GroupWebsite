@@ -661,6 +661,7 @@ p.dolor1{
 /* Shine */
 .hover14 figure {
 	position: relative;
+	padding-top: 3px;
 }
 .hover14 figure::before {
 	position: absolute;
