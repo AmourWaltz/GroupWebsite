@@ -28,6 +28,21 @@
 		});
 	});
 </script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+	$(function(){
+		$("a").click(function(){
+			var hr = $(this).attr("href");
+			var anh = $(hr).offset().top;
+			$("html,body").stop().animate({scrollTop:anh},1000);
+		})
+	})
+</script>
 <!-- start-smoth-scrolling -->
 </head>
 	
@@ -74,7 +89,7 @@
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="index.html">About</a></li>
 							<li><a href="people.html" class="hvr-bounce-to-bottom">People</a></li>
-							<li><a href="research.html" class="hvr-bounce-to-bottom">Research</a></li>
+							<li><a href="research.html" class="hvr-bounce-to-bottom">Publications</a></li>
 							<li><a href="grant.html" class="hvr-bounce-to-bottom">Grants</a></li>
 							<li><a href="join.html" class="hvr-bounce-to-bottom">Join Us</a></li>
 						</ul>
@@ -110,26 +125,26 @@
                 <!-- First-Slide -->
                 <div class="item active">
                     <img src="images/group1.png" alt="" class="img-responsive"/>
-                    <div class="carousel-caption kb_caption">
+                    <!-- <div class="carousel-caption kb_caption">
                         <h3 data-animation="animated flipInX">Group Moment</h3>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Second-Slide -->
                 <div class="item">
                     <img src="images/group2.png" alt="" class="img-responsive" />
-                    <div class="carousel-caption kb_caption kb_caption_right">
+                    <!-- <div class="carousel-caption kb_caption kb_caption_right">
                         <h3 data-animation="animated flipInX">Campus Profile</h3>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Third-Slide -->
                 <div class="item">
-                    <img src="images/banner2.jpg" alt="" class="img-responsive" />
-                    <div class="carousel-caption kb_caption kb_caption_center">
+                    <img src="images/group4.png" alt="" class="img-responsive" />
+                    <!-- <div class="carousel-caption kb_caption kb_caption_center">
                         <h3 data-animation="animated flipInX">Lab Profile 3</h3>
-                        <!-- <h4 data-animation="animated flipInX">cupidatat non proident</h4> -->
-                    </div>
+                        <h4 data-animation="animated flipInX">cupidatat non proident</h4>
+                    </div> -->
                 </div>
 
             </div>
@@ -220,14 +235,13 @@
 <!-- agile_testimonials -->
 	<div class="testimonials">
 		<div class="container">
-			<h3>Introduction</h3>
-			<p class="dolor">This is the introduction to the research group of <a href="https://www1.se.cuhk.edu.hk/~moelab/" style="font-weight: 500;">MoE Key Laboratory of High Confidence Software Technologies (MoE Lab),</a>
+			<h3>About Us</h3>
+			<p class="dolor">This is the research group of <a href="https://www1.se.cuhk.edu.hk/~moelab/" style="font-weight: 500;">MoE Key Laboratory of High Confidence Software Technologies (MoE Lab),</a>
 				System Engineering and Engineering Management Department <a href="https://www.se.cuhk.edu.hk/"><img src="images/seem.png" width="5%" alt="seem"></a>, The Chinese University of Hong Kong (CUHK) 
-				<a href="https://www.cuhk.edu.hk/english/index.html"><img src="images/cuhk.png" width="4%" alt="seem"></a>. </br>
-				To be a world class laboratory for research and development of theory, 
-				system and application for retrieval, filtering, extraction, 
-				analysis and understanding of Web information presented in multiple languages and media 
-				for the purpose of advancing the science and engineering of Web Intelligence.</p>
+				<a href="https://www.cuhk.edu.hk/english/index.html"><img src="images/cuhk.png" width="3.8%" alt="seem"></a>. </br>
+				We focus on the research and development of theory, system and application for Human-centric Generative AI in Forgettability, Reliability, Adaptability, Multiplicity, Explainability <a href="#ResearchPlan">(FRAME)</a>. 
+				Details of our research plan are as follows.</br></br>
+				If you're interested in following research directions, feel free to <b><a href="join.html">Join Us</a></b>.</p>
 				<div class="lab-list">
 					<span>🔭 Scope</span>
 					<div class="scope">
@@ -253,41 +267,49 @@
 	</div>
 	<div class="services-bottom" style="background-color:lightgray;">
 		<div class="container">
-			<h3>Research Plan - Human-Centric Generative AI </h3>
+			<h3 id="ResearchPlan">Research Plan - Human-Centric Generative AI </h3>
 			<div style="text-align: center;">
 				<img src="images/frame.png" alt="" class="img-responsive" height="75%" width="75%" style="display: inline-block;" />
 			</div>
 			<div class="w3ls_services_bottom_grids">
 					<div class="w3ls_services_bottom_grid_grid">
 						<p class="hvr-sweep-to-left"><font style="font-weight: bolder;font-size: 1.2em;font-family: 'Times New Roman', Times, serif;">Forgettability -</font> 
-							Machine learning models are typically trained using a large amount of data collected from users. 
-							Personal data is sensitive as it may contain information such as personal addresses and medical records. 
-							Consequently, well-trained models encoding personal information may invade users' privacy, 
-							and the derived information will even exist permanently. 
-							Therefore, machine forgetting is receiving increasing attention in research and industry. 
-							The purpose is to help models <b>forget</b> specific training data while maintaining model performance. 
-							In addition to the benefits of privacy, machine forgetting can also address the problem of harmful and toxic data.</p>
+							LLMs are typically trained using a large amount of data collected from users with sensitive personal information, 
+							leading to the invasions to users' privacy. 
+							Therefore, with increasing attention in research and industry, 
+							it is crucial to help LLMs <b>forget</b> specific training data while maintaining model performance, 
+							which can also potentially address the problem of harmful and toxic data.</br>
+							<font style="font-weight: bolder;font-size: 1.1em;font-family: 'Times New Roman', Times, serif;">Our Work: </font>
+							<a href="https://arxiv.org/abs/2305.06535" style="font-weight: bold;">KGA</a>.
+						</p>
 						<div class="w3ls_services_bottom_grid_grid_pos">
 							<h4>F</h4>
 						</div>
 					</div>
 					<div class="w3ls_services_bottom_grid_grid">
 						<p class="hvr-sweep-to-left"><font style="font-weight: bolder;font-size: 1.2em;font-family: 'Times New Roman', Times, serif;">Reliability -</font> 
-							Developing dialogue models with stable personalities is crucial. 
-							The current approach involves fine-tuning LLMs by inputting several personality snippets and dialogue history to generate responses. 
-							However, it is found that this commonly used practice is highly sensitive to the input order of personality snippets. 
-							In other words, even small changes in the input sequence of personality can significantly affect the generation stability, 
-							resulting in significant fluctuations in the dialogue system performance.</p>
+							Current LLMs suffer from severe hallucination issue which may mislead users with false information practically.
+							We are focusing on developing <b>reliable</b> AI systems by implicity elicting model's ability express factual knowledge or 
+							explicitly using external tools to generate more trustworthy, factually correct and consistent outputs by LLMs.</br>
+							<font style="font-weight: bolder;font-size: 1.1em;font-family: 'Times New Roman', Times, serif;">Our Work: </font>
+							<a href="https://aclanthology.org/2023.findings-acl.462/" style="font-weight: bold;">ORIG</a>, 
+							<a href="https://arxiv.org/abs/2310.08372" style="font-weight: bold;">K-Dial</a>,
+						</p>
 						<div class="w3ls_services_bottom_grid_grid_pos">
 							<h4>R</h4>
 						</div>
 					</div>
 					<div class="w3ls_services_bottom_grid_grid">
 						<p class="hvr-sweep-to-left"><font style="font-weight: bolder;font-size: 1.2em;font-family: 'Times New Roman', Times, serif;">Adaptability -</font> 
-							Improving the adaptability of LLMs involves two key aspects: 
+							Pretrained LLMs can be transferred to various downstream tasks.
+							Our research to improving the <b>adaptability</b> of LLMs involves two key aspects: 
 							utilizing internal knowledge from various tasks and adapting to the target task, 
-							as well as interacting with external knowledge and applying it to the target task. 
-							These two aspects are closely related and together constitute the adaptability of the model.</p>
+							as well as interacting with external knowledge and applying it to the target task, 
+							constituting the adaptability of LLMs.</br>
+							<font style="font-weight: bolder;font-size: 1.1em;font-family: 'Times New Roman', Times, serif;">Our Work: </font>
+							<a href="https://arxiv.org/abs/2305.11792" style="font-weight: bold;">Cue-CoT</a>, 
+							<a href="https://arxiv.org/abs/2108.11635" style="font-weight: bold;">MCML</a>.
+						</p>
 						<div class="w3ls_services_bottom_grid_grid_pos">
 							<h4>A</h4>
 						</div>
@@ -295,10 +317,13 @@
 
 					<div class="w3ls_services_bottom_grid_grid">
 						<p class="hvr-sweep-to-left"><font style="font-weight: bolder;font-size: 1.2em;font-family: 'Times New Roman', Times, serif;">Multiplicity -</font> 
-							Accurately understanding and analyzing multimodal documents is highly challenging in AI. 
-							This paper proposes a unified framework that integrates language and visual information from multimodal documents into a generative pre-training approach, 
+							Accurately understanding and analyzing <b>multi-modal</b> documents is highly challenging in AI. 
+							We are developing a unified framework that integrates language and visual information from multimodal documents into a generative pre-training approach, 
 							achieving state-of-the-art capabilities in fine-grained text recognition, document understanding, 
-							and generative document question answering in downstream tasks.</p>
+							and generative document question answering tasks.</br>
+							<font style="font-weight: bolder;font-size: 1.1em;font-family: 'Times New Roman', Times, serif;">Our Work: </font>
+							<a style="font-weight: bold;">Visual</a>.
+						</p>
 						<div class="w3ls_services_bottom_grid_grid_pos">
 							<h4>M</h4>
 						</div>
@@ -306,22 +331,20 @@
 
 					<div class="w3ls_services_bottom_grid_grid">
 						<p class="hvr-sweep-to-left"><font style="font-weight: bolder;font-size: 1.2em;font-family: 'Times New Roman', Times, serif;">Explainability -</font> 
-							AI models have a large number of parameters and adopt many non-linear operations, 
-							opaquing their operation mechanisms compared to traditional decision systems. 
-							The lack of transparency prevents people from understanding the basis and reasons underlying their predictions, 
-							leading to potential uncontrollable security risks. 
-							Explainable AI is a technique used to interpret AI models, 
-							enabling the understanding of the model's decision logic through model analysis, 
-							prediction attribution, and other means to enhance the reliability of the model's predictions.</p>
+							LLMs have a large number of parameters and non-linear operations, 
+							opaquing their operation mechanisms compared to traditional machine learning methods, 
+							preventing people from understanding the basis and reasons underlying their predictions. 
+							<b>Explainable</b> AI is a technique used to interpret AI models, 
+							enabling the understanding of the model's prediction logic.</br>
+							<font style="font-weight: bolder;font-size: 1.1em;font-family: 'Times New Roman', Times, serif;">Our Work: </font>
+							<a style="font-weight: bold;">ReadPrompt</a>.
+						</p>
 						<div class="w3ls_services_bottom_grid_grid_pos">
 							<h4>E</h4>
 						</div>
 					</div>
 				<div class="clearfix"> </div>
 			</div>
-		</div>
-		<div class="join">
-			<a href="join.html" class="hvr-sweep-to-left">Join Us...</a>
 		</div>
 	</div>
 
