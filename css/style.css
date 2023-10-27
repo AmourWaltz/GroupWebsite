@@ -259,10 +259,10 @@ ul.social-icons li {
     color:#F58703;
 }
 .navbar-nav > li > a {
-    font-size: 24px;
+    font-size: 1.55em;
 	/* font-weight: bold; */
     /* text-transform: uppercase; */
-    padding: 28px 10px 30px;
+    padding: 1em 0.4em 1.4em;
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
