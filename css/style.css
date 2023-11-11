@@ -229,7 +229,7 @@ ul.social-icons li {
 }
 .navbar-nav {
     float: left;
-    margin:0 0 0 8em;
+    margin:0 0 0 5em;
 }
 .navbar-default .navbar-brand,.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #212121;
@@ -237,7 +237,7 @@ ul.social-icons li {
 .navbar-brand {
     padding: 0 0 0 1.2em;
     line-height: 75px;
-    font-size: 1.5em;
+    font-size: 1.45em;
     background: url(../images/img-sp.png) no-repeat 0px -61px;
     height: 65px;
 }
@@ -259,10 +259,10 @@ ul.social-icons li {
     color:#F58703;
 }
 .navbar-nav > li > a {
-    font-size: 1.55em;
+    font-size: 1.52em;
 	/* font-weight: bold; */
     /* text-transform: uppercase; */
-    padding: 1em 0.4em 1.4em;
+    padding: 1em 0.3em 1.4em;
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
@@ -3147,13 +3147,13 @@ a.pa_italic:focus {
 
 .honor{
 	margin-bottom: 1em;
-	padding-left: 6em;
-	padding-right: 5em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 .honor span{
 	font-family:Georgia, 'Times New Roman', Times, serif;
 	font-weight: 400;
-	font-size: 1.1em;
+	font-size: 1.05em;
 	margin-left: 0em;
 	line-height:180%
 }
