@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>People</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-C8VzHzQeLzl0Zzpg9FYcA8sTJAV/w0m82yvheFevlK8xcGqqQ2Z+TBhXvXz1c/j+DdAOkpXDvlPD44OMeEy+wg==" crossorigin="anonymous" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!---<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>--->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+	$(function(){
+		$("a").click(function(){
+			var hr = $(this).attr("href");
+			var anh = $(hr).offset().top;
+			$("html,body").stop().animate({scrollTop:anh},1000);
+		})
+	})
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header-bottom">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="logo">
+						<h1><a class="navbar-brand" href="index.html"><span>MoE</span> Lab</a></h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav class="cl-effect-1" id="cl-effect-1">
+						<ul class="nav navbar-nav">
+							<li><a href="people.html" class="hvr-bounce-to-bottom">People</a></li>
+							<li><a href="research.html" class="hvr-bounce-to-bottom">Publications</a></li>
+							<li class="active"><a href="book.html">Books</a></li>
+							<li><a href="award.html" class="hvr-bounce-to-bottom">Awards</a></li>
+							<li><a href="grant.html" class="hvr-bounce-to-bottom">Grants</a></li>
+							<li><a href="join.html" class="hvr-bounce-to-bottom">Join Us</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+			<!-- search-jQuery -->
+				<script src="js/main.js"></script>
+			<!-- //search-jQuery -->
+		</div>
+	</div>
+<!-- //header -->
+<!-- service-breadcrumb -->
+	<div class="service-breadcrumb">
+		<div class="container">
+			<div class="wthree_service_breadcrumb_left">
+				<ul>
+					<li><a href="index.html">About</a><i>|</i></li>
+					<li>Books 
+						<!-- &emsp;&emsp;<font style="font-family:'Times New Roman', Times, serif ;font-size: 0.9em;font-weight: 850;color: gray;">
+						[ Conference | Journal | Patents | Books ]</font> -->
+					</li>
+				</ul>
+			</div>
+			<div class="wthree_service_breadcrumb_right">
+				<h3>
+					<a href="#Books" style="font-family:'Times New Roman', Times, serif ;font-size: 0.88em;font-weight: 550;color: #F58703;">Books&ensp;</a>
+				</h3>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //service-breadcrumb -->
+
+<div class="typo">
+	<div class="container">
+		<!-- <table class="table">
+			<thead>
+			  <tr>
+				<th colspan="5"><p style="font-size: 1.6em;font-weight: 600;font-family:'Times New Roman', Times, serif">Category Navigation</p></th>
+			  </tr>
+			  <tr>
+				<th colspan="1"><p style="font-family:'Times New Roman', Times, serif ;font-size: 1.2em;font-weight: 850;">📓&nbsp;&nbsp;Journal & Conference</p></th>
+			  </tr>
+			</thead> -->
+			<!-- <tbody>
+			  <tr>
+				<td><a href="#RumorDetection">Rumor Detection</a></td>
+				<td><a href="#Recommendation">Recommendation</a></td>
+				<td><a href="#LargeLanguageModels">Large Language Models</a></td>
+				<td><a href="#DialogueConversation">Dialogue & Conversation</a></td>
+				<td><a href="#InformationExtraction">Information Extraction</a></td>
+			  </tr>
+			  <tr>
+				<td><a href="#DataMining">Data Mining</a></td>
+				<td><a href="#InformationRetrieval">Information Retrieval</a></td>
+				<td><a href="#SentimentAnalysis">Sentiment Analysis</a></td>
+				<td><a href="#Summarization">Summarization</a></td>
+				<td><a href="#SocialComputing">Social Computing</a></td>
+			  </tr>
+			  <tr>
+
+				<td><a href="#Others">Others</a></td>
+				<td><a href="#2005">On or Before 2005</a></td>
+			  </tr>
+			</tbody>
+			<thead>
+				<tr>
+				  <th colspan="1"><p style="font-family:'Times New Roman', Times, serif ;font-size: 1.2em;font-weight: 850;">📓&nbsp;&nbsp;Books & Patents&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <td><a href="#BookAuthor">Books Authored</a></td>
+				  <td><a href="#BookEditer">Books Edited</a></td>
+				  <td><a href="#BookChapter">Book Chapters</a></td>
+				  <td><a href="#Patents">Published Patents</a></td>
+				</tr>
+			  </tbody>
+		  </table> -->
+			<h3 id="Books" class="bars" style="margin-top: 10px;"><p style="font-family:'Times New Roman', Times, serif ;font-size: 1.1em;font-weight: 850;">📓&nbsp;&nbsp;Books</p></h3>
+			<div class="paper-list">
+
+				 <div class="paper">
+					<span>《科技發展與資訊素養》.</span></br>
+					Kam-Fai Wong.</br>
+					<i>港教育圖書有限公司,</i> (ISBN: 978-988-241-672-7), 2022.
+				 </div>
+
+				 <div class="paper">
+					<span>Articificial Intelligence and the Development Opportunities brought by the Greater Bay Area to Hong Kong. 。「『人工智能』與大灣區給香港帶來的發展的機遇」，張妙清、鄭宏泰編，《拼灣區：新時代、新產業、新生活》</span></br>
+					Kam-Fai Wong.</br>
+					<i>香港中文大學香港亞太研究所, Strive in the Greater Bay Area: New Era, New Industry, New Life, pp241-260. (in Chinese)</i> 2021.
+				 </div>
+				 
+				 <div class="paper">
+					<span>e-Commerce Readiness from the Association of SoutheaseAsian Nations to the Belt and Road Initiative.</span></br>
+					Kam-Fai Wong, Chun-Hung Cheng, Waiman Cheung.</br>
+					<i>Regional Connection under the Belt and Road Initiative, Routledge Publisher, Chapter 8,</i> 2018.&emsp;📖&nbsp;[<font style="color: blue;font-family:Georgia, 'Times New Roman', Times, serif"><a href="https://www.taylorfrancis.com/chapters/edit/10.4324/9780429467172-8/commerce-readiness-association-southeast-asian-nations-asean-belt-road-initiative-kam-fai-wong-chun-hung-cheng-waiman-cheung">PDF</a></font>]
+				 </div>
+				 
+				 <div class="paper">
+					<span>《中文自然語言處理導論》.</span></br>
+					Kam-Fai Wong.</br>
+					<i>科學出版社,</i> (ISBN: 978-7-03-059044-2), 10/2018.
+				 </div>
+
+				 <div class="paper">
+					<span>Technology Development and Global Competitiveness. 「科技發展與全球競爭」，張妙清、趙永佳編，《香港特區二十年》。</span></br>
+					Wong, K.F.</br>
+					<i>香港中文大學香港亞太研究所，頁241-260, Hong Kong SAR 20 Years, (in Chinese)</i> 2017.
+				 </div>
+
+				 <div class="paper">
+					<span><a href="https://dl.acm.org/doi/abs/10.5555/3199949" style="color: black;">Social Media Content Analysis – Natural Language Processing and Beyond</a>.</span></br>
+					Wong, K.F., Wenjie Li, Ruifeng Xu and W. Gao.</br>
+					<i>World Scientific Publishing Co,</i> 2017. (ISBN: 978-981-3223-60-8).&emsp;📖&nbsp;[<font style="color: blue;font-family:Georgia, 'Times New Roman', Times, serif"><a href="https://link.springer.com/chapter/10.1007/11940098_19">PDF</a></font>]
+				 </div>
+				 
+				 <div class="paper">
+					<span>Software Power Behind Innovation and Technology (《創科軟實力》). </span></br>
+					Kam-Fai Wong.</br>
+					<i>Commercial Press 商務印書館(香港),</i> [ISBN: 978-962-07-6575-9], 4/2016.
+				 </div>
+
+				 <div class="paper">
+					<span><a href="https://books.google.com/books?hl=zh-CN&lr=&id=m4hyEAAAQBAJ&oi=fnd&pg=PR1&dq=Introduction+to+Chinese+Natural+Language+Processing&ots=5xwmIaZOdS&sig=UurSacdD42yfis8KwdrK2ZVcXDI" style="color: black;">Introduction to Chinese Natural Language Processing</a>.</span></br>
+					Wong, K.F., Wenjie Li, Ruifeng Xu and S.S. Zhang.</br>
+					<i>Publisher: Morgan & Claypool. (ISBN-10 1598299328).</i> 08/2009.&emsp;📖&nbsp;[<font style="color: blue;font-family:Georgia, 'Times New Roman', Times, serif"><a href="https://books.google.com/books?hl=zh-CN&lr=&id=m4hyEAAAQBAJ&oi=fnd&pg=PR1&dq=Introduction+to+Chinese+Natural+Language+Processing&ots=5xwmIaZOdS&sig=UurSacdD42yfis8KwdrK2ZVcXDI">PDF</a></font>]
+				 </div>
+				 
+				 <div class="paper">
+					<span>The mastermind behind our e-Society (《e-社會背後的頭腦》). </span></br>
+					Kam-Fai Wong.</br>
+					<i>Commercial Press 商務印書館(香港),</i> 09/2008.
+				 </div>
+
+				 <div class="paper">
+					<span><a href="https://books.google.com/books?hl=zh-CN&lr=&id=DLNqCQAAQBAJ&oi=fnd&pg=PR3&dq=Information+Retrieval+Technology,+4th+Asia+Information+Retrieval+Symposium&ots=1R1ChtCunh&sig=K38k41EIYNtu6m_z7m_eiMzqaV8" style="color: black;">Information Retrieval Technology, 4th Asia Information Retrieval Symposium</a>.</span></br>
+					Myaeng, S.H.; Zhou;M.; Wong, K.-F.; Zhang, H.-J. .</br>
+					<i>AIRS 2008, Harbin, China, January 15-18, 2008, Revised Selected Papers in LNCS 4993.</i> (ISBN: 978-3-540-68633-0), 2008.&emsp;📖&nbsp;[<font style="color: blue;font-family:Georgia, 'Times New Roman', Times, serif"><a href="https://books.google.com/books?hl=zh-CN&lr=&id=DLNqCQAAQBAJ&oi=fnd&pg=PR3&dq=Information+Retrieval+Technology,+4th+Asia+Information+Retrieval+Symposium&ots=1R1ChtCunh&sig=K38k41EIYNtu6m_z7m_eiMzqaV8">PDF</a></font>]
+				 </div>
+
+				 <div class="paper">
+					<span><a href="https://books.google.com/books?hl=zh-CN&lr=&id=fAebAhVTDAcC&oi=fnd&pg=PA1&dq=Computer+Processing+of+Oriental+Languages.+Beyond+the+Orient:+The+Research+Challenges+Ahead&ots=yoMTlKSP7c&sig=P7fJptOQNo3pA8_Jp8qwsmhw3Mk" style="color: black;">Computer Processing of Oriental Languages. Beyond the Orient: The Research Challenges Ahead</a>.</span></br>
+					Robert Dale, Kam-Fai Wong, Jian Su, Oi Yee Kwog.</br>
+					<i>Lecture Notes in Computer Science, Vol 4285,</i> (ISBN 978-3-540-49667-0), 11/2006.&emsp;📖&nbsp;[<font style="color: blue;font-family:Georgia, 'Times New Roman', Times, serif"><a href="https://books.google.com/books?hl=zh-CN&lr=&id=fAebAhVTDAcC&oi=fnd&pg=PA1&dq=Computer+Processing+of+Oriental+Languages.+Beyond+the+Orient:+The+Research+Challenges+Ahead&ots=yoMTlKSP7c&sig=P7fJptOQNo3pA8_Jp8qwsmhw3Mk">PDF</a></font>]
+				 </div>
+
+				 <div class="paper">
+					<span>Access Control Model for Web Services e-Government Infrastructure.</span></br>
+					Wong, K.F., and Tam M.K.W.</br>
+					<i>Electronic Government Strategies and Implementation, Wayne Huang, Keng Siau and Kwok Kee Wei (ed.), Idea Group Publishing, pp84-114,</i> 2005.&emsp;📖&nbsp;[<font style="color: blue;font-family:Georgia, 'Times New Roman', Times, serif"><a href="https://www.igi-global.com/chapter/access-control-model-webservices-government/9674">PDF</a></font>]
+				 </div>
+
+				 <div class="paper">
+					<span>A Generic Enrivinment for COTS Testing and Quality Prediction.</span></br>
+					X. Cai, M.R. Lyu and K.F. Wong.</br>
+					<i>Testing Commercial-off-the-Shelf Components and Systems, S. Beydeda and V. Gruhn (eds.), Springer-Verlag, Berlin, pp. 315-347,</i> 2005.
+				 </div>
+				 
+				 <div class="paper">
+					<span><a href="https://books.google.com/books?hl=zh-CN&lr=&id=AyL6BwAAQBAJ&oi=fnd&pg=PA1&dq=Natural+Language+Processing+%E2%80%93+IJCNLP2005&ots=pBOA-2iB7o&sig=RqPGhBvuiKPbFg2KZK8Yimld_cY" style="color: black;">Natural Language Processing – IJCNLP2005</a>.</span></br>
+					Robert Dale, Kam-Fai Wong, Jian Su, Oi Yee Kwog.</br>
+					<i>Series: Lecture Notes in Artificial Intelligence (LNAI), Vol. 3651, 1031 pages.</i> (ISBN: 3-540-29172-5), 10/2005.&emsp;📖&nbsp;[<font style="color: blue;font-family:Georgia, 'Times New Roman', Times, serif"><a href="https://books.google.com/books?hl=zh-CN&lr=&id=AyL6BwAAQBAJ&oi=fnd&pg=PA1&dq=Natural+Language+Processing+%E2%80%93+IJCNLP2005&ots=pBOA-2iB7o&sig=RqPGhBvuiKPbFg2KZK8Yimld_cY">PDF</a></font>]
+				 </div>
+				 
+				 <div class="paper">
+					<span>Project Management Handbook: Software Outsourcing to Mainland China.</span></br>
+					Kam-Fai Wong, Johnny Ip.</br>
+					<i>Publisher: Hong Kong IT Joint Council,</i> 03/2005.
+				 </div>
+
+				 <div class="paper">
+					<span><a href="https://link.springer.com/content/pdf/10.1007/b106653.pdf" style="color: black;">Information Retrieval Technology Asia Information Retrieval Symposium</a>.</span></br>
+					Myaeng, S.H.; Zhou;M.; Wong, K.-F.; Zhang, H.-J. .</br>
+					<i>AIRS 2004, Beijing, China, October 18-20, 2004. Revised Selected Papers. Series: Lecture Notes in Computer Science, Vol. 3411, 337 pages.</i> (ISBN: 3-540-25065-4), 02/2005.&emsp;📖&nbsp;[<font style="color: blue;font-family:Georgia, 'Times New Roman', Times, serif"><a href="https://link.springer.com/content/pdf/10.1007/b106653.pdf">PDF</a></font>]
+				 </div>
+				 
+				 <div class="paper">
+					<span>A Model for Processing Temporal References in Chinese.</span></br>
+					W. Li, K.F. Wong and C. Yuan.</br>
+					<i>in the language of time, Mani, I., et al (ed.), Oxford University Press, pp 559-574,</i> 2001.&emsp;📖&nbsp;[<font style="color: blue;font-family:Georgia, 'Times New Roman', Times, serif"><a href="https://aclanthology.org/W01-1305.pdf">PDF</a></font>]
+				 </div>
+
+				 <div class="paper">
+					<span>Commonsense Aboutness for Information Retrieval.</span></br>
+					Bruza, P.D. and Song, D. and Wong, K.F. and Cheng, C.H.</br>
+					<i>Advances in Intelligent Systems: Theory and Applications, Mohammadian, M. (ed), Vol. 59, IOS Press, pp288-295,</i> 2000.&emsp;📖&nbsp;[<font style="color: blue;font-family:Georgia, 'Times New Roman', Times, serif"><a href="https://www.researchgate.net/profile/Chun-Hung-Cheng/publication/43294557_Commonsense_aboutness_for_information_retrieval/links/0deec52f995a1aa776000000/Commonsense-aboutness-for-information-retrieval.pdf">PDF</a></font>]
+				 </div>
+
+				 <div class="paper">
+					<span>Data Placement in Shared-Nothing Database Systems.</span></br>
+					Zhou, S., Williams, M.H. and Wong, K.F.</br>
+					<i>High Performance Cluster Computing, Prentice-Hall, vol. 2, pp440-454,</i> 1999.
+				 </div>
+
+				 <div class="paper">
+					<span><a href="https://dl.acm.org/doi/abs/10.5555/552000" style="color: black;">Parallel Database Techniques</a>.</span></br>
+					Abdelguerfi, M. and Wong, K.F.</br>
+					<i>IEEE-CS Press, 07/1998, 222 pages. (ISBN: 0-8186-8398-8).</i>&emsp;📖&nbsp;[<font style="color: blue;font-family:Georgia, 'Times New Roman', Times, serif"><a href="https://dl.acm.org/doi/abs/10.5555/552000">PDF</a></font>]
+				 </div>
+
+				 <div class="paper">
+					<span>The EDS Commercial Parallel System.</span></br>
+					Borrmann, L., Hutner, F., Leunig, S.R., Lopez, M., Reeve, M.J., Skelton, C.J. and Wong, K.F.</br>
+					<i>Parallel Information Processing, Keane, J.A. (ed), pp81-102, Stanley Thornes (publishers) Ltd, UK,</i> 1996.
+				 </div>
+
+				 <div class="paper">
+					<span>EDS: An Advanced Parallel database server.</span></br>
+					Borrmann, L., Hutner, F., Leunig, S.R., Lopez, M., Reeve, M.J., Skelton, C.J. and Wong, K.F.</br>
+					<i>Emerging trends in database and knowledge-base machines: the application of parallel architectures to smart information systems, Lavington, S. and Abdelguerfi, M. (ed.),</i> 1995.&emsp;📖&nbsp;[<font style="color: blue;font-family:Georgia, 'Times New Roman', Times, serif"><a href="https://dl.acm.org/doi/abs/10.5555/212250.212271">PDF</a></font>]
+				 </div>
+
+				 <div class="paper">
+					<span>EDS: A Host for ESQL and ElipSys.</span></br>
+					Dorochevsky, M., Paci, M. Reeve, M., Schuerman, K., Vero, A., Wong, K.F. and Xu, J.</br>
+					<i>Parallel and Distributed Processing, Boyanov, K. (ed.), North-Holland,</i> 1992.
+				 </div>
+
+				 <div class="paper">
+					<span>Performance Evaluation of an OLTP Application on the EDS Database Server Usinga Behavioural Simulation Model.</span></br>
+					Wong, K.F. and Paci, M.</br>
+					<i>Data Management and Parallel Processing, Valduriez, P. (ed.), pp317-350, Chapman Hall,</i> 1992.
+				 </div>
+
+			</div>
+	</div>
+</div>
+
+
+
+<!-- services-bottom -->
+	<!-- <div class="services-bottom">
+		<div class="container">
+			<h3>Offered Services</h3>
+			<p class="dolor dolor1">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			<div class="w3ls_services_bottom_grids">
+				<div class="col-md-6 w3ls_services_bottom_grid">
+					<div class="w3ls_services_bottom_grid_grid">
+						<p class="hvr-sweep-to-left">Duis aute irure dolor in reprehenderit in voluptate velit esse 
+							voluptatibus maiores alias consequatur aut perferendis doloribus 
+							asperiores repellat.</p>
+						<div class="w3ls_services_bottom_grid_grid_pos">
+							<h4>1.</h4>
+						</div>
+					</div>
+					<div class="w3ls_services_bottom_grid_grid">
+						<p class="hvr-sweep-to-left">Duis aute irure dolor in reprehenderit in voluptate velit esse 
+							voluptatibus maiores alias consequatur aut perferendis doloribus 
+							asperiores repellat.</p>
+						<div class="w3ls_services_bottom_grid_grid_pos">
+							<h4>2.</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 w3ls_services_bottom_grid">
+					<div class="w3ls_services_bottom_grid_grid">
+						<p class="hvr-sweep-to-left">Duis aute irure dolor in reprehenderit in voluptate velit esse 
+							voluptatibus maiores alias consequatur aut perferendis doloribus 
+							asperiores repellat.</p>
+						<div class="w3ls_services_bottom_grid_grid_pos">
+							<h4>3.</h4>
+						</div>
+					</div>
+					<div class="w3ls_services_bottom_grid_grid">
+						<p class="hvr-sweep-to-left">Duis aute irure dolor in reprehenderit in voluptate velit esse 
+							voluptatibus maiores alias consequatur aut perferendis doloribus 
+							asperiores repellat.</p>
+						<div class="w3ls_services_bottom_grid_grid_pos">
+							<h4>4.</h4>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div> -->
+<!-- //services-bottom -->
+
+<!-- //services-icons -->
+
+<div class="footer-copy" >
+	<div class="container">
+		<p>Copyright &copy; 2023. MoE Lab All Rights Reserved.</p>
+	</div>
+</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
