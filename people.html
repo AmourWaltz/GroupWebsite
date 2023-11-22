@@ -25,6 +25,13 @@
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
+	$(function(){
+		$("a").click(function(){
+			var hr = $(this).attr("href");
+			var anh = $(hr).offset().top;
+			$("html,body").stop().animate({scrollTop:anh},1000);
+		})
+	})
 </script>
 <!-- start-smoth-scrolling -->
 </head>
@@ -79,11 +86,11 @@
 			</div>
 			<div class="wthree_service_breadcrumb_right">
 				<h3>
-					<font style="font-family:'Times New Roman', Times, serif ;font-size: 0.88em;font-weight: 550;color: #F58703;">Faculty&ensp;</font>
-					<font style="font-family:'Times New Roman', Times, serif ;font-size: 0.88em;font-weight: 550;color: #F58703;"> \ &ensp;Collaborators&ensp;</font>
-					<font style="font-family:'Times New Roman', Times, serif ;font-size: 0.88em;font-weight: 550;color: #F58703;"> \ &ensp;Staff&ensp;</font>
-					<font style="font-family:'Times New Roman', Times, serif ;font-size: 0.88em;font-weight: 550;color: #F58703;"> \ &ensp;Students&ensp;</font>
-					<font style="font-family:'Times New Roman', Times, serif ;font-size: 0.88em;font-weight: 550;color: #F58703;"> \ &ensp;Alumni</font>
+					<a href="#Faculty" style="font-family:'Times New Roman', Times, serif ;font-size: 0.88em;font-weight: 550;color: #F58703;">Faculty&ensp;</a>
+					<a href="#Collaborators" style="font-family:'Times New Roman', Times, serif ;font-size: 0.88em;font-weight: 550;color: #F58703;"> \ &ensp;Collaborators&ensp;</a>
+					<a href="#Staff" style="font-family:'Times New Roman', Times, serif ;font-size: 0.88em;font-weight: 550;color: #F58703;"> \ &ensp;Staff&ensp;</a>
+					<a href="#Students" style="font-family:'Times New Roman', Times, serif ;font-size: 0.88em;font-weight: 550;color: #F58703;"> \ &ensp;Students&ensp;</a>
+					<a href="#Alumni" style="font-family:'Times New Roman', Times, serif ;font-size: 0.88em;font-weight: 550;color: #F58703;"> \ &ensp;Alumni</a>
 				</h3>
 			</div>
 			<div class="clearfix"> </div>
@@ -106,7 +113,7 @@
 					</div>
 					<a href="https://kfwong.cintec.cuhk.edu.hk/">
 					<div class="wthree_team_grid1_pos">
-						<h4>Prof. Wong Kam Fai</h4>
+						<h4>Prof. Wong Kam-Fai</h4>
 					</div>
 				</a>
 				</div>
@@ -131,7 +138,7 @@
 <!-- team -->
 <div class="team">
 	<div class="container">
-		<h3 style="margin-top: -4em;">Collaborators</h3>
+		<h3 id="Collaborators" style="margin-top: -4em;">Collaborators</h3>
 		<!-- <p class="dolor">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
 		<div class="wthree_team_grids">
 			<div class="col-md-3 wthree_team_grid">
@@ -244,7 +251,7 @@
 <!-- team -->
 <div class="team">
 	<div class="container">
-		<h3 style="margin-top: -4em;">Staff</h3>
+		<h3 id="Staff" style="margin-top: -4em;">Staff</h3>
 		<!-- <p class="dolor">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
 		<div class="wthree_team_grids">
 			<!-- <div class="col-md-3 wthree_team_grid">
@@ -336,7 +343,7 @@
 <!-- team -->
 <div class="team">
 	<div class="container">
-		<h3 style="margin-top: -3em;">Current Students</h3>
+		<h3 id="Students" style="margin-top: -3em;">Current Students</h3>
 		<!-- <p class="dolor">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
 		<div class="wthree_team_grids">
 			<div class="col-md-3 wthree_team_grid">
@@ -378,7 +385,7 @@
 					</div>
 					<a href="https://kwanwaichung.github.io/">
 					<div class="wthree_team_grid1_pos">
-						<h4>Cyrus</h4>
+						<h4>Kwan Wai-Chung</h4>
 					</div>
 				</a>
 				</div>
@@ -572,7 +579,7 @@
 <!-- team -->
 <div class="team">
 	<div class="container">
-		<h3 style="margin-top: -3em;">Alumni</h3>
+		<h3 id="Alumni" style="margin-top: -3em;">Alumni</h3>
 		<div class="paper-list">
 			<div class="alumni">
 				<span>Wenjie LI (Associate Professor, Department of Computing, The Hong Kong Polytechnic University), 1997.</span></br>
