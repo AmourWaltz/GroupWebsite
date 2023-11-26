@@ -3073,11 +3073,7 @@ a.pa_italic:focus {
 	font-size: 1.12em;
 	margin-left: -1em;
 }
-.honor span:before {
-	content: "\2605"; /* 使用实心圆点符号作为列表项的标记 */
-	margin-right: 0.6em; /* 调整圆点与列表文本的距离 */
-	font-size: 0.8em; /* 调整圆点的大小 */
-}
+
 
 
 .alumni {
