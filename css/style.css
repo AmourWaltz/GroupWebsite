@@ -235,11 +235,11 @@ ul.social-icons li {
     color: #212121;
 }
 .navbar-brand {
-    padding: 0 0 0 1.2em;
-    line-height: 75px;
-    font-size: 1.45em;
-    background: url(../images/img-sp.png) no-repeat 0px -61px;
-    height: 65px;
+    padding: 0 0 0 0.3em;
+    line-height: 85px;
+    font-size: 1.5em;
+    /* background: url(../images/img-sp.png) no-repeat 0px -61px; */
+    height:65px;
 }
 /*-- agileits --*/
 .navbar-brand span {
@@ -912,8 +912,8 @@ p.your:after {
     color: #fff;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: url(../images/img-sp.png) no-repeat 0px -180px;
-    padding-left: 1.5em;
+    /* background: url(../images/img-sp.png) no-repeat 0px -180px; */
+    padding-left: 0.0em;
 }
 .footer-logo h2 a i{
 	/* transform: rotate(-180deg);
